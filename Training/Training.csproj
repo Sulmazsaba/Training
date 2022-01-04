@@ -97,6 +97,7 @@
     <Compile Include="FactoryMethod\Bike.cs" />
     <Compile Include="FactoryMethod\BikeDelivery.cs" />
     <Compile Include="FactoryMethod\Car.cs" />
+    <Compile Include="FactoryMethod\CarDelivery.cs" />
     <Compile Include="FactoryMethod\Delivery.cs" />
     <Compile Include="FactoryMethod\FactoryMethodTester.cs" />
     <Compile Include="FactoryMethod\IVehicle.cs" />
@@ -106,6 +107,13 @@
     <Compile Include="Flyweight\PointIconFactory.cs" />
     <Compile Include="Flyweight\PointService.cs" />
     <Compile Include="Flyweight\PointType.cs" />
+    <Compile Include="Interpreter\Context.cs" />
+    <Compile Include="Interpreter\DayExpression.cs" />
+    <Compile Include="Interpreter\IExpression.cs" />
+    <Compile Include="Interpreter\InterpreterTester.cs" />
+    <Compile Include="Interpreter\MonthExpression.cs" />
+    <Compile Include="Interpreter\SeperatorExpression.cs" />
+    <Compile Include="Interpreter\YearExpression.cs" />
     <Compile Include="Mediator\ArticlesDialogBox.cs" />
     <Compile Include="Mediator\Button.cs" />
     <Compile Include="Mediator\DialogBox.cs" />
@@ -163,6 +171,10 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Command\" />
+    <Folder Include="Iterator\" />
+    <Folder Include="Prototype\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

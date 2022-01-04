@@ -13,6 +13,7 @@ using Training.Decorator;
 using Training.Delegates;
 using Training.FactoryMethod;
 using Training.Flyweight;
+using Training.Interpreter;
 using Training.Mediator;
 using Training.Memento;
 using Training.Observer;
@@ -58,7 +59,9 @@ namespace Training
 
             //FlyWeightTester.Test();
 
-            MediatorTester.Test();
+            //MediatorTester.Test();
+
+            InterpreterTester.Test();
 
         }
 

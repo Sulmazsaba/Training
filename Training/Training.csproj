@@ -84,8 +84,13 @@
     <Compile Include="Command\CommandTester.cs" />
     <Compile Include="Command\CompositeCommand.cs" />
     <Compile Include="Command\CustomerService.cs" />
+    <Compile Include="Command\Undoable\BoldCommand.cs" />
+    <Compile Include="Command\Undoable\History.cs" />
+    <Compile Include="Command\Undoable\HtmlDocument.cs" />
     <Compile Include="Command\ICommand.cs" />
     <Compile Include="Command\ResizeCommand.cs" />
+    <Compile Include="Command\Undoable\IUndoableCommand.cs" />
+    <Compile Include="Command\Undoable\UndoCommand.cs" />
     <Compile Include="Composite\CompositeTester.cs" />
     <Compile Include="Composite\CompoundOrgan.cs" />
     <Compile Include="Composite\IOrgan.cs" />

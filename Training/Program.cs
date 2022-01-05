@@ -64,7 +64,7 @@ namespace Training
 
             //InterpreterTester.Test();
 
-            CommandTester.TestCompositeCommand();
+            CommandTester.TestUndoableCommand();
 
         }
 

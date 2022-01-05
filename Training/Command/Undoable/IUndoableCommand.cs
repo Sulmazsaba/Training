@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Training.Command
+namespace Training.Command.Undoable
 {
-  public  interface ICommand
-    {
-        void Execute();
-    }
+   public interface IUndoableCommand : ICommand
+   {
+       void UnExecute();
+   }
 }

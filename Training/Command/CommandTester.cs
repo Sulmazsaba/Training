@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Training.Command.Undoable;
 
 namespace Training.Command
 {
@@ -27,6 +28,24 @@ namespace Training.Command
 
             composite.Execute();
 
+            Console.ReadKey();
+        }
+
+        public static void TestUndoableCommand()
+        {
+            var history = new History();
+            var document = new HtmlDocument();
+
+            document.Content = "sa sa sa";
+            var command = new BoldCommand(document, history);
+
+            command.Execute();
+            Console.WriteLine(document.Content);
+
+            var undoCommand = new UndoCommand(history);
+            undoCommand.Execute();
+
+            Console.WriteLine(document.Content);
             Console.ReadKey();
         }
     }

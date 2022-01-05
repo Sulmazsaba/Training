@@ -8,6 +8,7 @@ using Training.Adapter;
 using Training.Bridge;
 using Training.Builder;
 using Training.ChainOfResponsibility;
+using Training.Command;
 using Training.Composite;
 using Training.Decorator;
 using Training.Delegates;
@@ -61,7 +62,9 @@ namespace Training
 
             //MediatorTester.Test();
 
-            InterpreterTester.Test();
+            //InterpreterTester.Test();
+
+            CommandTester.TestCompositeCommand();
 
         }
 

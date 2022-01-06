@@ -127,6 +127,9 @@
     <Compile Include="Interpreter\MonthExpression.cs" />
     <Compile Include="Interpreter\SeperatorExpression.cs" />
     <Compile Include="Interpreter\YearExpression.cs" />
+    <Compile Include="Iterator\BrowseHistory.cs" />
+    <Compile Include="Iterator\IIterator.cs" />
+    <Compile Include="Iterator\IteratorTester.cs" />
     <Compile Include="Mediator\ArticlesDialogBox.cs" />
     <Compile Include="Mediator\Button.cs" />
     <Compile Include="Mediator\DialogBox.cs" />
@@ -185,7 +188,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Iterator\" />
     <Folder Include="Prototype\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

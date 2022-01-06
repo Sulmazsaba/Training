@@ -26,8 +26,6 @@ namespace Training.Observer
 
             dataSource.Value = 10;
 
-
-
             dataSource.RemoveSubscriber(mahsa);
             dataSource.Value = 5;
 
